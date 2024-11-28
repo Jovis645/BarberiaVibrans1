@@ -1,0 +1,50 @@
+.container-lista{
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th{
+    border-bottom: 1px solid #111;
+    background-color: #3b3939;
+    color: #e2e6df;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-select, .form-control{
+    background-color: #e2e6df;
+}
+
+
+.btn-custom {
+    background-color: #2e302fef;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #969993;
+    color: white;
+}
+
+.btn-secondary{
+    color:#222020
+}
+
+.total-container {
+    margin-top: 30px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+/* @media only screen and (max-width: 767px) {
+    .table{
+        
+    } 
+}  */

@@ -1,0 +1,189 @@
+body{
+    font-family: sans-serif, 'Monserrat';
+    background-color: rgba(184, 128, 75, 0.986);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+header{
+    color: #a0a0a0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida sans', sans-serif;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.banner {
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-around;  /* Ocultar cualquier contenido fuera del área del banner */
+    
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ajustar la imagen al tamaño del banner */
+}
+/* Título dentro del banner */
+.banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centra el título */
+    font-size: 3rem; 
+    color: rgba(255, 255, 255, 0.884);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Sombra */
+    padding-bottom: 5rem;
+}
+
+
+/* Estilo para el botón */
+.banner .btn-custom {
+    position: absolute;
+    top: 60%;               /* Coloca el botón debajo del título */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    font-size: 1rem;
+    padding: 10px 10px;
+    background-color: #cca27f;
+    border: none;
+    border-radius: 15px;
+    color: rgb(43, 41, 41);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+
+}
+
+.banner .btn-custom:hover {
+    background-color: #e6d2c0ef;
+    text-decoration: none;
+}
+
+ /* Estilo para el título servicios */
+ .main-title {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 2.5rem;
+}
+
+/* Estilo para las imágenes y sus descripciones */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.card-body { 
+    text-align: justify;
+}
+
+
+.card {
+    margin: 15px 0;
+    background-color: rgba(184, 137, 75, 0.986);
+    border: none;
+}
+
+.container-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1220px) {
+    .embed-responsive{
+        height: 100px;
+        width: 200px;   
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .btn{
+        font-size: 1.2rem;
+       
+    }
+
+    .navbar-toggler{
+        font-size: 1.3rem;
+        margin-right: 20px;
+    }
+
+    .banner{
+        height: 40vh;
+        overflow: hidden;
+    }
+    .banner .tittle-banner {
+        font-size: 1.7rem;
+    }
+
+    .banner .btn-custom{
+        font-size: 0.8rem;  
+       
+    }
+    .embed-responsive{
+        height: 50px;
+        width: 50px;
+        margin: 0 0; 
+    }
+    
+  } 
+
+  @media only screen and (max-width: 640px) {
+    .btn{
+        font-size: 0.8rem;
+       
+    }
+
+    .navbar-toggler{
+        font-size: 1.3rem;
+        margin-right: 30px;
+    }
+   .banner .tittle-banner {
+        font-size: 1.7rem;
+    }
+
+    .banner .btn-custom{
+        font-size: 0.7rem;  
+       
+    }
+  
+  } 
+
+    @media only screen and (max-width: 376px) {
+
+    .banner .btn-custom {
+        font-size: 0.6rem;  
+    }
+
+    .banner .tittle-banner {
+        font-size: 1.5rem;
+    }
+   
+    } 
+
+/* media query de quienes somos */
+
+@media only screen and (max-width: 992px) {
+
+    .img-mision {
+        margin-top: 10px;
+
+    }
+
+    } 
+
+
+
+  

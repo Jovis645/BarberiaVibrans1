@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="../img/logo-pequeño.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/pagina_principal.css">
+    <link rel="stylesheet" href="../css/consultar-cancelar_turnos.css">
+    <title>Vibrans Studio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+            <div class="container">
+          <a class="navbar-brand" href="http://127.0.0.1:5500/index.html"><img src="../img/Logobarberia1.jpeg" height="50" alt="Logo Barbería Vibrans Studio"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white btn-expand-lg fs-5" data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3 id=menu">
+                <li class="nav-item">
+                  <a href="http://127.0.0.1:5500/index.html" class="btn btn-dark" role="button">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <!-- <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/lista_servicios.html">Lista Servicios</a></li> -->
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_corte.html">Corte</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_barba.html">Barba</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_tintura.html">Tintura</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/tratamientos.html">Tratamientos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="http://127.0.0.1:5500/gestionar_info.html/barberos.html" class="btn btn-dark" role="button">Barberos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Turnos
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_turnos.html/agendar_turno.html">Agendar</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_turnos.html/consultar_turnos.html">Consultar</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_turnos.html/cancelar.turno.html">Cancelar</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <button class="btn btn-dark">Cerrar Sesión</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <main class="container-lista container">
+        <div class="table-responsive" id="tabla-turnos">
+        <h2 class="text-center fw-bold">Cancelar Turno</h2>
+        <table class="table mt-5 table-secondary mx-auto" style="width: 80%;">
+            <thead>
+                <tr>
+                  <th>Servicio</th>
+                  <th>Fecha</th>
+                  <th>Hora</th>
+                  <th>Empleado</th>
+                  <th>Precio</th>
+                  <th>Cancelar</th>                     
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datos de las filas y las columnas  -->
+                <tr>
+                  <td>Barba</td>
+                  <td>25/11/2024</td>
+                  <td>11:30</td>
+                  <td>Juan Pérez</td>
+                  <td>$20000</td>
+                  <td><button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#cancelModal1">Cancelar</button></td>
+                    <div class="modal fade" id="cancelModal1" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="cancelModalLabel">Confirmar cancelación</h5>
+                                    <button button button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                ¿Estás seguro de que deseas cancelar este turno?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-danger">Cancelar turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </main> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

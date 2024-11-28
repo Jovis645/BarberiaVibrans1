@@ -1,0 +1,78 @@
+.container-recuperar {
+    position: relative;
+    padding: 16px;
+    margin-top: 200px;
+    width: 35vw;
+    background-color: #dcdcdcee;
+}
+
+/* Campos de entrada de ancho completo */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1ee;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Establecer un estilo para el botón de enviar código*/
+  .registrobtn {
+    background-color: #2e302fef;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.7;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  
+  /* Ajustar el tamaño del contenedor y la fuente */
+
+  @media only screen and (max-width: 1200px) {
+
+    .container-recuperar {
+        width: 50vw;
+        font-size: 15px;}
+    }
+
+    footer {
+      font-size: 2rem;
+    }
+
+  @media only screen and (max-width: 1050px) {
+    .container-recuperar {
+        width: 50vw;
+        font-size: 0.8rem;}
+    }
+
+    .footer {
+      font-size: 0.5rem;
+    }
+  
+  @media only screen and (max-width: 768px) {
+    .container-recuperar {
+        width: 50vw;
+        font-size: 15px;}
+    .footer {
+      font-size: 0.5rem;
+    }
+    }
+  

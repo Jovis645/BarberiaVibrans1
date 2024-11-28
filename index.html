@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="css/pagina_principal.css">
+    <script src="https://kit.fontawesome.com/8bc3fad93b.js" crossorigin="anonymous"></script>
+    <title>Vibrans Studio</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="http://127.0.0.1:5500/index.html"><img src="img/Logobarberia1.jpeg" height="50" alt="Logo Barbería Vibrans Studio"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white btn-expand-lg fs-5" data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3 id=menu">
+                <li class="nav-item">
+                  <a href="http://127.0.0.1:5500/index.html" class="btn btn-dark" role="button">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Quienes somos
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_info.html/quienes_somos.html">Misión y Visión</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_info.html/barberos.html">Barberos</a></li>
+                    <li><a class="dropdown-item" href="#testimonios">Testimonios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Servicios
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <!-- <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/lista_servicios.html">Lista Servicios</a></li> -->
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_corte.html">Corte</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_barba.html">Barba</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/servicios_tintura.html">Tintura</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/gestionar_servicios/tratamientos.html">Tratamientos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="btn-contacto" href="#contacto"><button class="btn btn-dark">Contacto</button></a>
+                </li>
+                <li class="nav-item">
+                 <a class="btn-iniciar" href="http://127.0.0.1:5500/gestionar_usuarios/iniciar_sesion.html"><button class="btn btn-dark">Iniciar sesión</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+       <!-- Banner -->
+      <section class="banner">
+      <!-- Imagen de fondo del banner -->
+        <img src="img/banner1.jpeg" class="img-fluid" alt="Banner de Imagen">
+
+      <!-- Título y botón centrado sobre la imagen -->
+        <h2 class="tittle-banner">Los mejores servicios para damas y caballeros</h2>
+        <a class="text-center" href="http://127.0.0.1:5500/gestionar_turnos.html/agendar_turno.html" alt=""><button type="button" class="btn btn-custom fw-bold">Agendar Turno</button></a>
+      </section>
+      <section>
+        <div class="container-bienvenido container my-5">
+          <div class="row d-flex justify-content-center align-items-center ms-5 ">
+            <div class="col-md-6">
+              <div class="bienvanido me-4" style="text-align: justify;">
+                <h3 class="tittle-bienvenido mb-5 fs-2">¡Bienvenido a nuestra barbería!</h3>
+                <p>Bienvenido a nuestra barbería, donde trabajamos para que la excelencia se encuentre con el estilo en cada trabajo que realizamos.</p>
+                <p>Utilizamos productos de alta calidad para garantizar resultados impecables.</p>
+              </div>
+            </div>
+      
+            <!-- Imagen 2 de la barberia -->
+            <div class="col-md-6">
+              <div>
+                <img src="img/Foto-barbería.png" alt="Imagen" class="img-fluid" style="width: 550px; height: 380px;">
+              </div>
+            </div>
+          </div>
+        </div>      
+      </section>
+      <section class="container-listaservicios container" style="margin-bottom: 10px;">
+        <h3 class="tittle-lista mt-5 fw-bold fs-1" style="margin-left: 3rem;">Servicios</h3>
+        <div class="container container-images mt-4 d-flex justify-content-space-beetween  text-align-center">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card pt-3 px-3 pb-0 me-3" style="width: 21rem;">
+                  <img src="img/corte1.jpeg" class="card-img-top" style="width: 300px; height: 240px;" alt="Imagen Corte">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold fs-3" style="text-align: center;">Corte</h3>
+                    <p class="card-text mt-4">Resalta tu estilo con un corte atemporal, preciso y personalizado que te hará lucir impecable en cualquier ocasión.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">  
+                <div class="card pt-3 px-3 pb-0 me-3" style="width: 21rem;">
+                  <img src="img/Barba.jpg" class="card-img-top" style="width: 300px; height: 240px;" alt="Imagen Barba">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold fs-3" style="text-align: center;">Barba</h3>
+                    <p class="card-text mt-4">Deja que nuestros expertos cuiden de tu barba, dándole forma, suavidad y un toque de distinción que atraerá todas las miradas.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 mb-4">  
+                <div class="card pt-3 px-3 pb-0 me-3" style="width: 21rem;">
+                  <img src="img/Tintura.jpeg" class="card-img-top" style="width: 300px; height: 240px;" alt="Imagen Tintura">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold fs-3" style="text-align: center;">Tintura</h3>
+                    <p class="card-text mt-4">Cambia tu look de forma natural con sutiles toques de color, cubriendo las canas o añadiendo reflejos que realcen tu estilo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row p-0">
+              <div class="col-md-6 mb-4">
+                <div class="card pt-3 px-3 pb-0 me-3" style="width: 21rem;">
+                  <img src="img/tratamientos.jpeg" class="card-img-top" style="width: 300px; height: 240px;" alt="Imagen Tratamientos">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold fs-3" style="text-align: center;">Tratamientos</h3>
+                    <p class="card-text mt-4">Estos tratamientos ayudan a mantener una apariencia saludable y cuidada en cada área: facial, cabello, barba, etc.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="card pt-3 px-3 pb-0 me-3 " style="width: 21rem;">
+                  <img src="img/Maquillaje.jpeg" class="card-img-top" style="width: 300px; height: 240px;" alt="Imagen Maquillaje">
+                  <div class="card-body">
+                    <h3 class="card-title fw-bold fs-3" style="text-align: center;">Maquillaje</h3>
+                    <p class="card-text mt-4">Nuestro servicio de maquillaje está diseñado para realzar tu belleza y ayudarte a lucir espectacular en cualquier ocasión.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-testimonios container mt-5" style="margin-bottom: 30px; flex-wrap: wrap;">
+        <h3 class="tittle-testimonios mt-5 mb-4 fw-bold fs-1" style="margin-left: 3rem;" id="testimonios">Testimonios</h3>
+        <div class="container mt-5 mb-5 mx-4">
+          <div class="row">
+            <!-- Testimonio 1-->
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <!-- ícono persona en circulo-->
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                    <h3 class="card-title ps-3 mb-3 mt-2">Roger Vargas</h3>
+                  </div>
+                  
+                  <p class="card-text" style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectet. Lorem ipsum dolor sit amet, consectet.
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Testimonio 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                    <h3 class="card-title ps-3 mb-3 mt-2">Amanda Cortes</h3>
+                  </div>
+                  <p class="card-text" style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectet. Lorem ipsum dolor sit amet, consectet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                    <h3 class="card-title ps-3 mt-2">Luis Peña</h3>
+                  </div>
+                  <p class="card-text" style="text-align: justify;">
+                    Lorem ipsum dolor sit amet, consectet. Lorem ipsum dolor sit amet, consectet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-contacto container d-flex justify-content-space-beetween" style="margin-bottom: 10px; justify-content: space-between;">
+        <div class="row">
+          <div class="col-md">
+            <h3 class="tittle-testimonios mt-5 fw-bold fs-1" id="contacto" style="margin-left: 3rem;">Contactanos</h3>
+            <div class="contact-info pb-3 pt-4 ps-5">
+              <p class="fs-4">Dirección: Calle 33B # 44-56</p>
+              <p class="fs-4">Teléfono: +57 123 456 7890</p>
+              <p class="fs-4">Email: contacto@vibransstudio.com</p>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer xcontainer-fluid bg-dark text-white text-center pb-1 pt-2 mt-5">
+      <div class="social-media mb-2">
+          <h5>Siguenos en nuestras redes</h5>
+          <a href="#"><img src="img/fb.jpg" alt="Facebook" class="img-fluid" style="height: 30px;"></a>
+          <a href="#"><img src="img/instagram.jpg" alt="Instagram" class="img-fluid" style="height: 30px;"></a>
+          <a href="#"><img src="img/twitter.jpg" alt="Twitter" class="img-fluid" style="height: 30px;"></a>
+          <a href="#"><img src="img/yt.jpg" alt="Youtube" class="img-fluid" style="height: 30px;"></a>
+      </div>
+      <p>© 2024 Vibrans Studio. Todos los derechos reservados.</p>
+  </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

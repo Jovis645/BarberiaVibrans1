@@ -1,0 +1,30 @@
+  /* Estilo para el título */
+  .main-title {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 2.5rem;
+}
+
+/* Estilo para las imágenes y sus descripciones */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.card-body { 
+    text-align: justify;
+}
+
+
+.card {
+    margin: 15px 0;
+    background-color: rgba(184, 137, 75, 0.986);
+    border: none;
+}
+
+.container-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
